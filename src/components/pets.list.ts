@@ -10,7 +10,6 @@ export class PetsList extends Component {
   constructor(selector: string) {
     super(selector);
     this.pets = getMockPets();
-    this.pets[0].isAdopted = true;
     this.render();
     console.log(this.element);
     console.log(this.pets);
@@ -39,18 +38,18 @@ export class PetsList extends Component {
     const list = this.pets
       .map(
         (item) => `
-        <section class="pet">
           <li>
-            <img src="../../public/images/${item.name}.jpg" alt="Pet" />
+            <img src="/images/${item.name}.jpg" alt="Pet" />
             <span>Name: ${item.name}</span>
             <span>ID: ${item.id}</span>
             <span>Owner: ${item.owner}</span>
             <div class="actions">
-              <i class="button" role="button" data-id=${item.id}>🗑️</i>
-              <input type="checkbox" ${item.isAdopted ? 'checked' : ''}>
+            <span>Adopted: </span>
+            <input type="checkbox" ${item.isAdopted ? 'checked' : ''}>
+                <span>Deceased: </span>
+                <i class="button" role="button" data-id=${item.id}>☠️</i>
             </div>
-          </li>
-        </section>`
+          </li>`
       )
       .join('');
 
