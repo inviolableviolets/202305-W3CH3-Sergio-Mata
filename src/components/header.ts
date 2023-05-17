@@ -5,7 +5,7 @@ export class Header extends Component {
   constructor(selector: string, public title: string) {
     super(selector);
     this.template = this.createTemplate();
-    this.render();
+    this.render('afterbegin');
   }
 
   createTemplate() {
