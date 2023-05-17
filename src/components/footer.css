@@ -1,0 +1,11 @@
+footer span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(70, 131, 180, 0.174);
+  padding: 1rem;
+}

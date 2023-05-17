@@ -1,0 +1,36 @@
+li span {
+  padding: 0.5rem;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-style: initial;
+  cursor: pointer;
+}
+
+img {
+  max-width: 50vh;
+  max-height: 50vh;
+  margin-bottom: 1rem;
+}
+
+li {
+  max-height: 60vh;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 0 0 10px black;
+  padding: 1rem;
+  background-color: white;
+}
+
+.actions {
+  margin-top: 2rem;
+}
