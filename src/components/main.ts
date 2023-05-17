@@ -11,7 +11,7 @@ export class Main extends Component {
   createTemplate() {
     return `
     <main>
-      <img src="./public/images/dog1.jpg" alt="">
+    
     </main>
     `;
   }

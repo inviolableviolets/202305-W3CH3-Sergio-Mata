@@ -15,9 +15,10 @@ i {
 }
 
 img {
-  max-width: 50vh;
-  max-height: 50vh;
+  max-width: 20rem;
+  max-height: 20rem;
   margin-bottom: 1rem;
+  border-radius: 10rem;
 }
 
 li {
@@ -28,7 +29,13 @@ li {
   border: 1px solid black;
   box-shadow: 0 0 10px black;
   padding: 1rem;
-  background-color: white;
+  border-radius: 1rem;
+  color: white;
+  background: linear-gradient(
+    40deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
 }
 
 .actions {
